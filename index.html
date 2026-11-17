@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sagebrush Jackalope ($JACKA)</title>
+<meta name="description" content="$JACKA is a brand-new meme coin starring Captain Jacka, the cowboy-hat jackalope of the Nevada high desert. No utility, no promises. Horns up, expectations down.">
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eef0e4;--ink:#1c2236;--soft:#4a5268;--sage:#5f7d57;--gold:#b5801c;--panel:#e0e5d2;--line:#c3cbb0;
+:root{--bg:#eef0e4;--ink:#1c2236;--soft:#4a5268;--sage:#5f7d57;--gold:#8f6212;--panel:#e0e5d2;--line:#c3cbb0;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#141a2e;--ink:#e9eddc;--soft:#a9b2c4;--sage:#9bb78f;--gold:#e3b45c;--panel:#1d2540;--line:#2c3658}}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#141a2e;--ink:#e9eddc;--soft:#a9b2c4;--sage:#9bb78f;--gold:#e3b45c;--panel:#1d2540;--line:#2c3658}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Work Sans",system-ui,sans-serif}
 main{max-width:640px;margin:0 auto;padding:20px 20px 60px}
@@ -18,21 +19,34 @@ h1,h2{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.1;
 h1{font-size:clamp(2.4rem,11vw,3.6rem);margin-top:10px}
 h2{font-size:1.6rem;margin:44px 0 10px;color:var(--gold)}
 p{margin:0 0 14px;max-width:62ch}
+a{color:var(--sage)}
 .tag{font-size:1.2rem;color:var(--sage);font-weight:600;margin:10px 0 18px}
 .notice{border:2px solid var(--gold);border-radius:6px;padding:12px 14px;font-size:.95rem;color:var(--soft);margin:18px 0}
 .notice b{color:var(--ink)}
 svg{display:block;width:100%;max-width:300px;margin:8px auto}
 .links{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-.links a{flex:1 1 130px;text-align:center;padding:12px;border:2px solid var(--sage);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600}
-.links a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.links a small{display:block;font-weight:400;color:var(--soft);font-size:.8rem}
+.links a,.btn{flex:1 1 130px;text-align:center;padding:12px;border:2px solid var(--sage);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600;background:transparent;font:inherit;font-weight:600;cursor:pointer}
+.links a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.links a small,.btn small{display:block;font-weight:400;color:var(--soft);font-size:.8rem}
+.btn[aria-disabled="true"]{opacity:.6;cursor:default}
 .box{background:var(--panel);border-left:5px solid var(--sage);padding:14px 16px;border-radius:0 6px 6px 0;margin:0 0 14px}
+.ca{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ca code{flex:1 1 220px;word-break:break-all;font-size:.9rem;color:var(--ink)}
+.ca .btn{flex:0 0 auto;padding:8px 16px}
 dl{margin:0}dt{font-weight:600;color:var(--sage)}dd{margin:0 0 12px}
+ol{padding-left:22px;margin:0 0 14px}li{margin-bottom:8px}
+details{border-top:1px solid var(--line);padding:10px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{font-weight:600;cursor:pointer;color:var(--ink)}
+summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+details p{margin:8px 0 0;color:var(--soft)}
 footer{margin-top:50px;font-size:.85rem;color:var(--soft);border-top:1px solid var(--line);padding-top:16px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <main>
+
 <svg viewBox="0 0 300 240" role="img" aria-label="Captain Jacka, a jackrabbit with small antlers and a cowboy hat">
 <ellipse cx="150" cy="215" rx="95" ry="12" fill="#000" opacity=".15"/>
 <path d="M105 70 C85 20 95 5 110 8 C125 12 128 45 128 70Z" fill="#8a7a66"/>
@@ -52,22 +66,30 @@ footer{margin-top:50px;font-size:.85rem;color:var(--soft);border-top:1px solid v
 <rect x="104" y="70" width="92" height="9" fill="#d29b2f"/>
 <circle cx="150" cy="74" r="5" fill="#f0cf74"/>
 </svg>
+
 <h1>Sagebrush Jackalope</h1>
 <p class="tag">$JACKA. Horns up, expectations down.</p>
 <p>Meet Captain Jacka, the cowboy-hat jackalope of the Nevada high desert. Part jackrabbit, part antelope, fully a meme.</p>
+
 <div class="notice"><b>Plain truth:</b> $JACKA is a brand-new meme coin. It has no utility, no promises, and no guarantee of any value. Only put in what you can afford to lose. Nothing here is financial advice.</div>
+
 <div class="links">
-<div class="links">
-<a href="https://x.com/jackalheard" target="_blank" rel="noopener">X<small>@jackalheard</small></a>
-<a href="#" aria-disabled="true">Telegram<small>coming soon</small></a>
+<a href="https://x.com/HeadJackel" target="_blank" rel="noopener">X<small>@HeadJackel</small></a>
+<a href="https://t.me/+Tw563JqcOgMwNzQx" target="_blank" rel="noopener">Telegram<small>Join the herd</small></a>
 <a href="https://discord.gg/QfDbqgZ3vf" target="_blank" rel="noopener">Discord<small>Join the herd</small></a>
 </div>
 
+<h2>Contract address</h2>
+<div class="box">
+<div class="ca">
+<code id="addr">Not launched yet. The address will be posted here and on our official X, Telegram, and Discord.</code>
+<button class="btn" id="copy" type="button" aria-disabled="true">Copy</button>
 </div>
+</div>
+<p>If an address shows up anywhere else, treat it as fake.</p>
 
 <h2>The Lite Paper</h2>
 <p><i>Not a whitepaper. Mock-serious on purpose, honest where it counts.</i></p>
-
 <dl>
 <dt>What is it?</dt>
 <dd>A meme coin with a mascot. That’s the whole product. If it’s worth anything, it’s because people enjoy the joke and the community around it.</dd>
@@ -77,23 +99,94 @@ footer{margin-top:50px;font-size:.85rem;color:var(--soft);border-top:1px solid v
 <dd>$JACKA is a curator coin. The community picks the best memes, art, and Captain Jacka adventures, and the best ones get featured on this site.</dd>
 <dt>Community first</dt>
 <dd>We build the community on X, Telegram, and Discord before anything launches. The plan is to grow for a week or two, then launch on Pump.fun.</dd>
+<dt>No presale</dt>
+<dd>There is no presale and no private allocation sale. Anyone who wants $JACKA buys it on Pump.fun, the same as everyone else.</dd>
 </dl>
+
+<h2>Captain Jacka, by the numbers</h2>
+<div class="box">
+<dl>
+<dt>Home range</dt><dd>The Nevada high desert, wherever there’s sagebrush.</dd>
+<dt>Hat size</dt><dd>Larger than strictly necessary.</dd>
+<dt>Antler count</dt><dd>Small, but growing.</dd>
+<dt>Verified sightings</dt><dd>Zero. That’s the point.</dd>
+<dt>Motto</dt><dd>Horns up, expectations down.</dd>
+</dl>
+</div>
 
 <h2>The Cactus Fund</h2>
 <div class="box">A prize pot for random raffles open to the community. Winners are picked at random, and the pot grows as the community does.</div>
 <p>Before any free tokens go out, a lawyer gets asked whether giving them away is allowed. Until then, raffles are prize raffles only. If free token giveaways turn out not to be allowed, they won’t happen, and we’ll say so here.</p>
 
+<h2>How to buy</h2>
+<p>Buying isn’t open yet. When it is, this is how:</p>
+<ol>
+<li>Install a Solana wallet app such as Phantom and save your recovery phrase offline. Never share it with anyone.</li>
+<li>Add some SOL to the wallet.</li>
+<li>Open Pump.fun and connect your wallet.</li>
+<li>Paste the official contract address from this page and check that it matches exactly.</li>
+<li>Enter an amount you can afford to lose, then confirm the swap.</li>
+</ol>
+<div class="links">
+<a id="pump" class="btn" href="#" aria-disabled="true">Pump.fun<small>Coming at launch</small></a>
+</div>
+
 <h2>Roadmap</h2>
 <dl>
-<dt>Now</dt><dd>Site, X, Telegram, and Discord go live.</dd>
-<dt>Next</dt><dd>Grow the community and run the first raffles.</dd>
+<dt>Now</dt><dd>Site, X, Telegram, and Discord are live.</dd>
+<dt>Next</dt><dd>Grow the community, run the first meme contests, and ask a lawyer about giveaways.</dd>
 <dt>Then</dt><dd>Launch on Pump.fun. The contract address will be posted only on the official links above.</dd>
+<dt>After</dt><dd>Feature the best community art and memes, and keep the herd laughing.</dd>
 </dl>
 
+<h2>FAQ</h2>
+<details><summary>Is this an investment?</summary><p>No. It’s a meme coin made for fun. It isn’t an investment, a security, or financial advice.</p></details>
+<details><summary>Will it make me money?</summary><p>Nobody can promise that. Meme coins swing hard and many go to zero. Only put in what you can afford to lose.</p></details>
+<details><summary>Is there a presale?</summary><p>No. There is no presale.</p></details>
+<details><summary>Does $JACKA pay dividends or give a share of anything?</summary><p>No. It carries no ownership, no dividends, and no promise of profit.</p></details>
+<details><summary>Which contract address is real?</summary><p>Only the one posted on this page and on our official X, Telegram, and Discord. Anything else is fake.</p></details>
+<details><summary>Will the team DM me or ask for my wallet?</summary><p>Never. Nobody from the team will ask for your recovery phrase or send you links in private messages.</p></details>
+<details><summary>How do I get involved?</summary><p>Join the Discord or Telegram, post your best Captain Jacka meme, and follow @HeadJackel on X.</p></details>
+
+<h2>Creator fees and holdings</h2>
+<div class="box">The creator of $JACKA may earn a small share of trading fees from Pump.fun. The creator may also hold some $JACKA. If that changes, we’ll say so on this page.</div>
+<p>There are no dividends, no profit sharing, and no cut of what other people spend. Fees come from trading activity, not from the price, and may be little or nothing.</p>
+
 <h2>Risks, in plain words</h2>
-<p>Meme coins swing hard and many go to zero. Nobody can promise a price, a profit, or dividends. The creator holds no promise to you. Beware of fake accounts and fake contract addresses. Only trust the official links on this page.</p>
+<p>Meme coins swing hard and many go to zero. Nobody can promise a price, a profit, or dividends. Beware of fake accounts and fake contract addresses. Only trust the official links on this page.</p>
 
 <footer>Sagebrush Jackalope ($JACKA) is a meme coin made for fun. It is not an investment, security, or financial advice. Contract address: to be announced.</footer>
+
 </main>
+<script>
+// At launch, paste the real values between the quotes, then save.
+var CONTRACT_ADDRESS = "";
+var PUMP_FUN_LINK = "";
+(function(){
+  try{
+    if(CONTRACT_ADDRESS){
+      document.getElementById("addr").textContent = CONTRACT_ADDRESS;
+      var c = document.getElementById("copy");
+      c.removeAttribute("aria-disabled");
+      c.addEventListener("click", function(){
+        try{
+          navigator.clipboard.writeText(CONTRACT_ADDRESS).then(function(){
+            c.textContent = "Copied";
+            setTimeout(function(){ c.textContent = "Copy"; }, 1500);
+          });
+        }catch(e){}
+      });
+    }
+    if(PUMP_FUN_LINK){
+      var p = document.getElementById("pump");
+      p.href = PUMP_FUN_LINK;
+      p.target = "_blank";
+      p.rel = "noopener";
+      p.removeAttribute("aria-disabled");
+      p.querySelector("small").textContent = "Buy $JACKA";
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
